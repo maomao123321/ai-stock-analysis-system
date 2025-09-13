@@ -1,0 +1,48 @@
+# ===========================================
+# Agentic Stock System - 兼容版本 requirements.txt
+# 经过实际测试验证的版本组合
+# ===========================================
+
+# FastAPI 核心依赖
+fastapi==0.111.0
+uvicorn[standard]==0.35.0
+
+# LangChain 生态系统
+langchain==0.3.7
+langchain-core==0.3.15
+langgraph==0.2.16
+langsmith==0.1.72
+
+# OpenAI 集成
+openai==1.54.4
+
+# 数据验证和序列化 (Pydantic v2)
+pydantic==2.11.7
+
+# HTTP 客户端
+httpx==0.28.1
+
+# MCP (Model Context Protocol)
+mcp==1.14.0
+
+# 其他必要依赖
+python-multipart>=0.0.7
+python-dotenv==1.0.0
+
+# 数据库和缓存依赖
+psycopg2-binary==2.9.9
+redis==5.0.1
+sqlalchemy==2.0.25
+
+# 开发和测试依赖
+pytest==8.3.4
+pytest-asyncio==0.24.0
+
+# ===========================================
+# 版本兼容性说明:
+# - Pydantic 2.11.7 与 LangGraph 0.2.16 完全兼容
+# - FastAPI 0.111.0 原生支持 Pydantic v2
+# - Uvicorn 0.35.0 与 FastAPI 0.111.0 完全兼容
+# - MCP 1.14.0 需要 Pydantic >= 2.11.0
+# - 所有版本都经过实际环境测试验证
+# ===========================================
