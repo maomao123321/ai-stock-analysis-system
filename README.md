@@ -1,156 +1,156 @@
-# 🚀 AI 股票分析系统
+# 🚀 AI Stock Analysis System
 
-基于 Vue 3 + Vite + FastAPI 的智能股票分析系统，集成多个 AI Agent 进行协作分析。
+An intelligent stock analysis system built with Vue 3 + Vite + FastAPI, featuring collaborative AI agents for comprehensive market analysis.
 
-## ✨ 功能特性
+## ✨ Features
 
-- 🔍 **股票代码输入**：支持输入任何股票代码进行分析
-- 🤖 **AI Agent 协作**：多个 AI Agent 协同工作，提供全面分析
-- 📊 **技术指标分析**：RSI、MACD、移动平均线等技术指标
-- 📈 **趋势分析**：短期、中期、长期趋势分析
-- ⚠️ **风险评估**：波动率、风险等级、Beta 值评估
-- 💡 **投资建议**：操作建议、置信度、目标价、止损价
-- 📱 **响应式设计**：现代化的用户界面，支持各种设备
+- 🔍 **Stock Symbol Input**: Analyze any stock symbol with real-time data
+- 🤖 **AI Agent Collaboration**: Multiple AI agents working together for comprehensive analysis
+- 📊 **Technical Indicators**: RSI, MACD, Moving Averages, and more
+- 📈 **Trend Analysis**: Short-term, medium-term, and long-term trend insights
+- ⚠️ **Risk Assessment**: Volatility analysis, risk levels, and Beta evaluation
+- 💡 **Investment Recommendations**: Action suggestions, confidence levels, target prices, and stop-loss points
+- 📱 **Responsive Design**: Modern UI that works on all devices
 
-## 🛠️ 技术栈
+## 🛠️ Tech Stack
 
-### 前端
-- **Vue 3** - 渐进式 JavaScript 框架
-- **Vite 4.5.3** - 快速的前端构建工具
-- **TypeScript 4.9.5** - 类型安全的 JavaScript
-- **Axios** - HTTP 客户端
-- **Vue Router** - 官方路由管理器
+### Frontend
+- **Vue 3** - Progressive JavaScript framework
+- **Vite 4.5.3** - Fast frontend build tool
+- **TypeScript 4.9.5** - Type-safe JavaScript
+- **Axios** - HTTP client
+- **Vue Router** - Official router
 
-### 后端
-- **FastAPI** - 现代、快速的 Python Web 框架
-- **PostgreSQL** - 关系型数据库
-- **Redis** - 内存数据库，用于缓存
-- **Docker** - 容器化部署
-- **Alpha Vantage API** - 股票数据源
+### Backend
+- **FastAPI** - Modern, fast Python web framework
+- **PostgreSQL** - Relational database
+- **Redis** - In-memory database for caching
+- **Docker** - Containerized deployment
+- **Alpha Vantage API** - Stock data source
 
-## 🚀 快速开始
+## 🚀 Quick Start
 
-### 环境要求
+### Prerequisites
 
-- **Node.js**: 16.20.2+ (推荐 18+)
+- **Node.js**: 16.20.2+ (recommended 18+)
 - **Docker**: 20.10+
 - **Docker Compose**: 2.0+
 
-### 安装步骤
+### Installation
 
-1. **克隆仓库**
+1. **Clone the repository**
 ```bash
 git clone <your-repo-url>
 cd stock-agent
 ```
 
-2. **启动后端服务**
+2. **Start backend services**
 ```bash
 docker compose up -d
 ```
 
-3. **安装前端依赖**
+3. **Install frontend dependencies**
 ```bash
 cd frontend-vue
 npm install
 ```
 
-4. **启动前端服务**
+4. **Start frontend development server**
 ```bash
 npm run dev
 ```
 
-5. **访问应用**
-- 前端：http://localhost:3001
-- 后端 API：http://localhost:8000
-- API 文档：http://localhost:8000/docs
+5. **Access the application**
+- Frontend: http://localhost:3001
+- Backend API: http://localhost:8000
+- API Documentation: http://localhost:8000/docs
 
-## 📖 使用指南
+## 📖 Usage Guide
 
-1. 在输入框中输入股票代码（如：AAPL、GOOGL、MSFT）
-2. 点击"开始分析"按钮
-3. 查看 AI Agent 协作分析结果：
-   - 实时股价数据
-   - 技术指标分析
-   - 趋势分析
-   - 风险评估
-   - 投资建议
+1. Enter a stock symbol in the input field (e.g., AAPL, GOOGL, MSFT)
+2. Click "开始分析" (Start Analysis) button
+3. View comprehensive AI agent analysis results:
+   - Real-time stock data
+   - Technical indicator analysis
+   - Trend analysis
+   - Risk assessment
+   - Investment recommendations
 
-## 🔧 开发指南
+## 🔧 Development Guide
 
-### 项目结构
+### Project Structure
 
 ```
 stock-agent/
-├── frontend-vue/          # Vue 前端
+├── frontend-vue/          # Vue frontend
 │   ├── src/
-│   │   ├── views/         # 页面组件
-│   │   ├── router/        # 路由配置
-│   │   └── assets/        # 静态资源
+│   │   ├── views/         # Page components
+│   │   ├── router/        # Router configuration
+│   │   └── assets/        # Static assets
 │   ├── package.json
 │   └── vite.config.ts
-├── backend/               # FastAPI 后端
-│   ├── main.py           # 主应用
-│   ├── agents/           # AI Agent 实现
+├── backend/               # FastAPI backend
+│   ├── main.py           # Main application
+│   ├── agents/           # AI Agent implementations
 │   └── requirements.txt
-├── docker-compose.yml    # Docker 配置
+├── docker-compose.yml    # Docker configuration
 └── README.md
 ```
 
-### 开发命令
+### Development Commands
 
 ```bash
-# 前端开发
+# Frontend development
 cd frontend-vue
-npm run dev          # 启动开发服务器
-npm run build        # 构建生产版本
-npm run preview      # 预览构建结果
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run preview      # Preview build
 
-# 后端开发
+# Backend development
 cd backend
-python main.py       # 直接运行（需要配置环境变量）
+python main.py       # Run directly (requires env vars)
 ```
 
-## ⚠️ 常见问题与解决方案
+## ⚠️ Common Issues & Solutions
 
-### 1. Node.js 版本兼容性问题
+### 1. Node.js Version Compatibility
 
-**问题**：`TypeError: crypto$2.getRandomValues is not a function`
+**Issue**: `TypeError: crypto$2.getRandomValues is not a function`
 
-**原因**：Vite 5.x 和 TypeScript 5.x 需要 Node.js 18+，但环境是 Node.js 16.20.2
+**Cause**: Vite 5.x and TypeScript 5.x require Node.js 18+, but environment is Node.js 16.20.2
 
-**解决方案**：
+**Solution**:
 ```bash
-# 降级到兼容版本
+# Downgrade to compatible versions
 npm install vite@^4.5.3 typescript@~4.9.5 --save-dev
 ```
 
-**避免方法**：检查 Node.js 版本要求，或升级到 Node.js 18+
+**Prevention**: Check Node.js version requirements or upgrade to Node.js 18+
 
-### 2. Docker 端口占用问题
+### 2. Docker Port Conflicts
 
-**问题**：前端无法在默认端口 3000 启动
+**Issue**: Frontend cannot start on default port 3000
 
-**原因**：Docker Compose 中的前端服务占用了 3000 端口
+**Cause**: Docker Compose frontend service occupies port 3000
 
-**解决方案**：Vite 自动切换到 3001 端口
+**Solution**: Vite automatically switches to port 3001
 
-**避免方法**：统一端口规划，或修改 Docker Compose 配置
+**Prevention**: Plan port usage or modify Docker Compose configuration
 
-### 3. 前后端连接问题
+### 3. Frontend-Backend Connection Issues
 
-**问题**：`Error: getaddrinfo ENOTFOUND backend`
+**Issue**: `Error: getaddrinfo ENOTFOUND backend`
 
-**原因**：Vite 代理配置使用 `http://backend:8000`，这在 Docker 网络外无法解析
+**Cause**: Vite proxy uses `http://backend:8000`, which cannot be resolved outside Docker network
 
-**解决方案**：
+**Solution**:
 ```typescript
 // vite.config.ts
 export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:8000',  // 改为 localhost
+        target: 'http://localhost:8000',  // Change to localhost
         changeOrigin: true
       }
     }
@@ -158,108 +158,108 @@ export default defineConfig({
 })
 ```
 
-**避免方法**：区分开发环境（localhost）和生产环境（Docker 服务名）
+**Prevention**: Distinguish between development (localhost) and production (Docker service names)
 
-### 4. HTTP 方法不匹配
+### 4. HTTP Method Mismatch
 
-**问题**：`405 Method Not Allowed`
+**Issue**: `405 Method Not Allowed`
 
-**原因**：前端用 `GET` 请求，后端 API 是 `POST` 方法
+**Cause**: Frontend uses GET request, backend API expects POST method
 
-**解决方案**：
+**Solution**:
 ```javascript
-// 统一使用 POST 方法
+// Use POST method consistently
 const response = await axios.post(`/api/analyze/stock?symbol=${symbol}`)
 ```
 
-**避免方法**：API 设计时明确文档化 HTTP 方法
+**Prevention**: Document HTTP methods clearly in API design
 
-### 5. 数据类型转换问题
+### 5. Data Type Conversion Issues
 
-**问题**：`toFixed is not a function`
+**Issue**: `toFixed is not a function`
 
-**原因**：后端返回的 `change_percent` 是字符串，前端直接调用 `toFixed()`
+**Cause**: Backend returns `change_percent` as string, frontend calls `toFixed()` directly
 
-**解决方案**：
+**Solution**:
 ```javascript
-// 安全的数值处理
+// Safe numeric processing
 const price = Number(value || 0).toFixed(2)
 const changePercent = Number(value || 0) >= 0 ? 'positive' : 'negative'
 ```
 
-**避免方法**：前后端统一数据类型，或前端做类型检查
+**Prevention**: Ensure consistent data types between frontend and backend, or add type checking
 
-### 6. API 密钥配置问题
+### 6. API Key Configuration Issues
 
-**问题**：`无法获取股票数据: Unknown error`
+**Issue**: `Unable to get stock data: Unknown error`
 
-**原因**：Alpha Vantage API 密钥无效或 API 限制
+**Cause**: Alpha Vantage API key invalid or API limits
 
-**解决方案**：添加模拟数据作为备选方案
+**Solution**: Added simulated data as fallback option
 
-**避免方法**：API 密钥管理，添加降级策略
+**Prevention**: Proper API key management and fallback strategies
 
-### 7. Vue 路由配置问题
+### 7. Vue Router Configuration Issues
 
-**问题**：页面显示空白或默认 Vite 页面
+**Issue**: Blank page or default Vite page displayed
 
-**原因**：内容放在 `App.vue` 但路由指向 `HomeView.vue`
+**Cause**: Content placed in `App.vue` but router points to `HomeView.vue`
 
-**解决方案**：将内容移到正确的路由组件
+**Solution**: Move content to correct route component
 
-**避免方法**：理解 Vue Router 的工作原理
+**Prevention**: Understand Vue Router component mapping
 
-## 🎯 最佳实践
+## 🎯 Best Practices
 
-### 开发环境设置
+### Development Environment Setup
 
 ```bash
-# 1. 检查 Node.js 版本
-node --version  # 建议 18+
+# 1. Check Node.js version
+node --version  # Recommended 18+
 
-# 2. 检查端口占用
+# 2. Check port usage
 lsof -i :3000
 lsof -i :8000
 
-# 3. 启动顺序
-docker compose up -d  # 先启动后端
-npm run dev          # 再启动前端
+# 3. Startup sequence
+docker compose up -d  # Start backend first
+npm run dev          # Then start frontend
 ```
 
-### API 设计规范
+### API Design Standards
 
 ```javascript
-// 明确 HTTP 方法
-POST /api/analyze/stock  // 不是 GET
+// Clear HTTP methods
+POST /api/analyze/stock  // Not GET
 
-// 统一数据格式
+// Consistent data formats
 {
-  "price": 215.0,           // 数字类型
-  "change_percent": "-0.5"  // 字符串类型，需要转换
+  "price": 215.0,           // Number type
+  "change_percent": "-0.5"  // String type, needs conversion
 }
 ```
 
-### 前端类型安全
+### Frontend Type Safety
 
 ```javascript
-// 安全的数值处理
+// Safe numeric processing
 const price = Number(value || 0).toFixed(2)
 const changePercent = Number(value || 0) >= 0 ? 'positive' : 'negative'
 ```
 
-### 错误处理策略
+### Error Handling Strategy
 
 ```javascript
-// API 降级策略
+// API fallback strategy
 if (apiError) {
   useSimulatedData()
-  showWarning("使用模拟数据")
+  showWarning("Using simulated data")
 }
 ```
 
-## 🔑 环境变量配置
+## 🔑 Environment Variables
 
-创建 `.env` 文件：
+Create `.env` file:
 
 ```env
 # Alpha Vantage API
@@ -268,21 +268,21 @@ ALPHA_VANTAGE_API_KEY=your_api_key_here
 # OpenAI API
 OPENAI_API_KEY=your_openai_key_here
 
-# 数据库
+# Database
 DATABASE_URL=postgresql://postgres:postgres123@localhost:5432/agentic_stock_db
 REDIS_URL=redis://localhost:6379
 ```
 
-## 📊 API 接口
+## 📊 API Endpoints
 
-### 股票分析
+### Stock Analysis
 
 ```http
 POST /api/analyze/stock?symbol=AAPL
 Content-Type: application/json
 ```
 
-**响应示例**：
+**Response Example**:
 ```json
 {
   "symbol": "AAPL",
@@ -306,32 +306,38 @@ Content-Type: application/json
 }
 ```
 
-## 🤝 贡献指南
+## 🤝 Contributing
 
-1. Fork 本仓库
-2. 创建特性分支：`git checkout -b feature/AmazingFeature`
-3. 提交更改：`git commit -m 'Add some AmazingFeature'`
-4. 推送到分支：`git push origin feature/AmazingFeature`
-5. 提交 Pull Request
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature/AmazingFeature`
+3. Commit your changes: `git commit -m 'Add some AmazingFeature'`
+4. Push to the branch: `git push origin feature/AmazingFeature`
+5. Submit a Pull Request
 
-## 📄 许可证
+## 📄 License
 
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
-## 🙏 致谢
+## 🙏 Acknowledgments
 
-- [Vue.js](https://vuejs.org/) - 渐进式 JavaScript 框架
-- [FastAPI](https://fastapi.tiangolo.com/) - 现代、快速的 Python Web 框架
-- [Alpha Vantage](https://www.alphavantage.co/) - 股票数据 API
-- [Vite](https://vitejs.dev/) - 快速的前端构建工具
+- [Vue.js](https://vuejs.org/) - Progressive JavaScript framework
+- [FastAPI](https://fastapi.tiangolo.com/) - Modern, fast Python web framework
+- [Alpha Vantage](https://www.alphavantage.co/) - Stock data API
+- [Vite](https://vitejs.dev/) - Fast frontend build tool
 
-## 📞 联系方式
+## 📞 Contact
 
-如有问题或建议，请通过以下方式联系：
+For questions or suggestions, please contact:
 
-- 提交 [Issue](https://github.com/your-username/stock-agent/issues)
-- 发送邮件至：your-email@example.com
+- Open an [Issue](https://github.com/your-username/stock-agent/issues)
+- Send email to: your-email@example.com
 
 ---
 
-⭐ 如果这个项目对你有帮助，请给它一个星标！
+⭐ If this project helps you, please give it a star!
+
+---
+
+## 中文版本
+
+[查看中文版 README](README_CN.md)
