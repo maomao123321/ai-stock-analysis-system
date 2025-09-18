@@ -1,4 +1,4 @@
-# 🚀 AI Stock Analysis System
+# 🚀 Stock Investment Advisor Agent System (QLoRA + LangGraph)
 
 An intelligent stock analysis system built with Vue 3 + Vite + FastAPI, featuring collaborative AI agents for comprehensive market analysis.
 
@@ -22,6 +22,7 @@ An intelligent stock analysis system built with Vue 3 + Vite + FastAPI, featurin
 - **Vue Router** - Official router
 
 ### Backend
+- **QLoRA** - Fine-tuning the baseline
 - **Langchain** - Multi-agent system
 - **FastAPI** - Modern, fast Python web framework
 - **PostgreSQL** - Relational database
