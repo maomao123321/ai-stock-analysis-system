@@ -22,6 +22,7 @@ An intelligent stock analysis system built with Vue 3 + Vite + FastAPI, featurin
 - **Vue Router** - Official router
 
 ### Backend
+- **Langchain** - Multi-agent system
 - **FastAPI** - Modern, fast Python web framework
 - **PostgreSQL** - Relational database
 - **Redis** - In-memory database for caching
